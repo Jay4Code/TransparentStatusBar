@@ -1,0 +1,58 @@
+<resources>
+
+    <!--
+        android:windowTranslucentStatus true，状态栏半透明
+        android:windowTranslucentNavigation true，导航栏半透明
+
+        android:statusBarColor 设置状态栏颜色，android:windowTranslucentStatus为false时生效
+        android:navigationBarColor 设置导航栏颜色，android:windowTranslucentNavigation为false时生效
+    -->
+    <!--
+        设置透明状态栏：
+        android:statusBarColor @android:color/transparent
+        android:windowTranslucentStatus false
+        android:windowTranslucentNavigation true
+        注意：导航栏必须设置为true
+    -->
+    <style name="ImageTranslucentBarTheme" parent="AppTheme">
+        <!--5.0以后要手动设置状态栏的颜色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+
+    <style name="ImageTranslucentBarTheme.NoActionBar" parent="AppTheme.NoActionBar">
+        <!--5.0以后要手动设置状态栏的颜色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <!--
+        设置纯色状态栏和导航栏：
+        android:statusBarColor color
+        android:navigationBarColor color
+        android:windowTranslucentStatus false
+        android:windowTranslucentNavigation false
+    -->
+    <style name="ColorTranslucentBarTheme" parent="AppTheme">
+        <!--5.0以后要手动设置状态栏的颜色-->
+        <item name="android:statusBarColor">@color/bg_window</item>
+        <item name="android:navigationBarColor">@color/bg_window</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="ColorTranslucentBarTheme.NoActionBar" parent="AppTheme.NoActionBar">
+        <!--5.0以后要手动设置状态栏的颜色-->
+        <item name="android:statusBarColor">@color/bg_window</item>
+        <item name="android:navigationBarColor">@color/bg_window</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <!--Splash主题-->
+    <style name="SplashTheme" parent="ImageTranslucentBarTheme.NoActionBar" />
+
+</resources>

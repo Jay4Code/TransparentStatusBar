@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="ImageTranslucentBarTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="ImageTranslucentBarTheme.NoActionBar" parent="AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="ColorTranslucentBarTheme" parent="ImageTranslucentBarTheme" />
+
+    <style name="ColorTranslucentBarTheme.NoActionBar" parent="ImageTranslucentBarTheme.NoActionBar" />
+
+    <!--Splash主题-->
+    <style name="SplashTheme" parent="ImageTranslucentBarTheme.NoActionBar" />
+
+</resources>
